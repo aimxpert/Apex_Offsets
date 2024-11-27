@@ -1,7 +1,7 @@
 TimeDateStamp = 0x673d5270
 CheckSum = 0x2762f7e
 GameVersion = "v3.0.4.31"
-OFFSET_HIGHLIGHTSETTINGS 0xB2AD371 
+#define OFFSET_HIGHLIGHTSETTINGS 0xB2AD371
 [Interfaces]
  
 [Miscellaneous]
