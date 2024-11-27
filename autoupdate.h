@@ -1,5 +1,4 @@
-#pragma once
-#define FLT_MAX 3.402823466e+38F // max value
+﻿#pragma once
 #define OFFSET_HIGHLIGHTSETTINGS 0xB2AD370
 #define OFFSET_HIGHLIGHTSERVERACTIVESTATES  0x29c      //OFF_GLOW_HIGHLIGHT_ID 
 #define OFFSET_GLOW_ENABLE  0x28C       // OFF_GLOW_ENABLE 
@@ -13,16 +12,6 @@
 #define OFF_HIGHLIGHT_TYPE_SIZE 0x34
 #define OFF_GLOW_FIX 0x268
 #define OFF_GLOW_DISTANCE 0x294
-
-struct HighlightFunctionBits
-{
-    uint8_t functionBits[4];
-};
-
-struct HighlightParameter
-{
-    float parameter[4];
-};
 
 #define OFFSET_ENTITYLIST 0x2022BF8    //cl_entitylist
 #define OFFSET_LOCAL_ENT 0x24F6288     //LocalPlayer
@@ -48,17 +37,11 @@ struct HighlightParameter
 #define OFFSET_FLAGS 0x00c8 //[DataMap.C_Player] m_fFlags 是否在地面
 #define OFFSET_SKIN 0xD60     // m_nSkin
 #define OFFSET_m_skydiveState 0x4784
-#define OFFSET_m_skydiveSpeed 0x47a4
-#define OFFSET_SAVERMODE 0x358C  //m_iObserverMode
-#define OFFSET_DUCK_STATUS 0x2a60   // m_duckState
 
 #define OFFSET_CAMERAPOS 0x1ee0 //CPlayer!camera_origin
-#define OFFSET_VIEWANGLES  0x2534 - 0x14 // m_ammoPoolCapacity - 0x14
-#define OFFSET_BREATH_ANGLES  OFFSET_VIEWANGLES - 0x10
 #define OFFSET_AIMPUNCH	0x2438 //m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
 
 #define OFFSET_GRAPPLE  0x2cc0 //[RecvTable.DT_Player] m_grapple
-#define OFFSET_GRAPPLE_ACTIVE  0x2d48  //[RecvTable.DT_Player] m_grappleActive
 #define OFFSET_GRAPPLE_ATTACHED  0x0048 //m_grappleAttached
 
 #define OFFSET_IN_JUMP 0x077bfe50  // 跳 in_jump        
@@ -88,18 +71,8 @@ struct HighlightParameter
 
 #define OFFSET_BULLET_SPEED 0x19d8 + 0x04ec   //[WeaponSettingsMeta]base + projectile_launch_speed
 #define OFFSET_BULLET_SCALE 0x19d8 + 0x04f4 // + projectile_gravity_scale
-#define OFFSET_ZOOM_FOV 0x15e0 + 0x00b8 //m_playerData + m_curZoomFOV     ?
-#define OFFSET_AMMO 0x1580 //[RecvTable.DT_WeaponX_LocalWeaponData].m_ammoInClip
-#define OFFSET_m_xp 0x378C //m_xp
 
-#define OFFSET_VIEWMODEL 0x2d98 //m_hViewModels
-#define OFFSET_CURFRAME 0x00d8 //m_currentFrame.modelIndex
-#define OFFSET_MODELNAME 0x0030 //m_ModelName
-#define OFFSET_PLAT_FROM_USER_ID    0x2548 //m_platformUserId
-#define OFFSET_NAME_INDEX 0x38
-#define OFF_WALL_RUN_START_TIME 0x367C           //[RecvTable.DT_LocalPlayerExclusive]->m_wallRunStartTime
-#define OFF_TRAVERSAL_PROGRESS 0x2B6C            //[RecvTable.DT_LocalPlayerExclusive]->m_traversalProgress
-#define OFFSET_MOUSE_SENSITIVITY  0x023c1a10 // mouse_sensitivity
+#define OFFSET_MOUSE_SENSITIVITY  0x23C1A10 // mouse_sensitivity
 
 namespace WeaponIDs {
     //Weapon Ids
