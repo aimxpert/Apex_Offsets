@@ -1,4 +1,4 @@
-#### #define OFFSET_HIGHLIGHTSETTINGS 0xB2AD370
-#### #define OFFSET_LOCAL_ENT 0x24F6288     //LocalPlayer
+### #define OFFSET_HIGHLIGHTSETTINGS 0xB2AD370
+### #define OFFSET_LOCAL_ENT 0x24F6288     //LocalPlayer
 
 ### Update 11/26/2024
